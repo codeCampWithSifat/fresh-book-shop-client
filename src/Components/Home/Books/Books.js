@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Loading from "../../Shared/Loading/Loading";
 import Book from "../Book/Book";
 
 // const allBooks = [
@@ -69,11 +70,15 @@ const Books = () => {
   }, []);
   return (
     <div className="container mt-4">
-        <h3 className="text-center text-primary m-4 ">Selected Your Favourite Book</h3>
+      <h3 className="text-center text-primary m-4 ">
+        Selected Your Favourite Book
+      </h3>
       <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-        {books.map((book) => (
-          <Book book={book} key={book._id}></Book>
-        ))}
+        {books.length === 0 ? (
+          <Loading />
+        ) : (
+          books.map((book) => <Book book={book} key={book._id}></Book>)
+        )}
       </div>
     </div>
   );
