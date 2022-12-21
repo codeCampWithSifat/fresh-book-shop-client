@@ -28,6 +28,16 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item mx-3">
+                <Link className="nav-link active" aria-current="page" to="/order">
+                  Order
+                </Link>
+              </li>
+              <li className="nav-item mx-3">
+                <Link className="nav-link active" aria-current="page" to="/addproduct">
+                  Add Product
+                </Link>
+              </li>
+              <li className="nav-item mx-3">
                 <Link className="nav-link active" aria-current="page" to="/login">
                   Login
                 </Link>

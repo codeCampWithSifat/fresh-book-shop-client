@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Books from "../Books/Books";
 
 const Home = () => {
   return (
     <div>
-      <h2>this is home component for any user </h2>
+      <Books />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
