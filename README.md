@@ -2,8 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Book Shop Full Stack WebSite
+ </br>
+
+## Some Modern Technologies Are Used In This Project . Technologies Are Given Below
 
 <ul>
- <h2>some part done</h2>
+ <h3>some part done</h3>
 </ul>
