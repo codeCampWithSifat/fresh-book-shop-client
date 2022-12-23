@@ -9,6 +9,7 @@ import Order from "./Components/Order/Order";
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import RequiredAuth from "./Components/Login/RequiredAuth/RequiredAuth";
 import ManageProduct from "./Components/ManageProduct/ManageProduct";
+import OrderInfo from "./Components/OrderInfo/OrderInfo";
 
 function App() {
   return (
@@ -19,12 +20,20 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/manageproducts" element={<ManageProduct />}/>
+        <Route path="/manageproducts" element={<ManageProduct />} />
         <Route
           path="/addproduct"
           element={
             <RequiredAuth>
               <AddProduct />
+            </RequiredAuth>
+          }
+        />
+        <Route
+          path="/orderinfo/:id"
+          element={
+            <RequiredAuth>
+              <OrderInfo />
             </RequiredAuth>
           }
         />

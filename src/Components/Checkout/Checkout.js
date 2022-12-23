@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Checkout = () => {
   const { id } = useParams();
   const [book, setBook] = useState({});
+  const navigate = useNavigate();
   useEffect(() => {
     fetch(`http://localhost:5000/allbooks/${id}`)
       .then((res) => res.json())
@@ -12,6 +13,9 @@ const Checkout = () => {
         console.log(data);
       });
   }, [id]);
+  const handleOrderInfo = (id) => {
+    navigate(`/orderinfo/${id}`);
+  };
   return (
     <div className="container mt-5">
       <table className="table">
@@ -31,7 +35,12 @@ const Checkout = () => {
         </tbody>
       </table>
       <div className="text-center mt-4">
-         <button className="btn btn-danger">Order Now</button>
+        <button
+          onClick={() => handleOrderInfo(book._id)}
+          className="btn btn-danger"
+        >
+          Order Now
+        </button>
       </div>
     </div>
   );
