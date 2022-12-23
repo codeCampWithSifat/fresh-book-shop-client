@@ -6,7 +6,7 @@ const Checkout = () => {
   const [book, setBook] = useState({});
   const navigate = useNavigate();
   useEffect(() => {
-    fetch(`http://localhost:5000/allbooks/${id}`)
+    fetch(`https://fresh-book-shop-server.vercel.app/allbooks/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setBook(data);

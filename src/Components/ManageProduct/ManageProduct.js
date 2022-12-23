@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const ManageProduct = () => {
   const [books, setBooks] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/allbooks`)
+    fetch(`https://fresh-book-shop-server.vercel.app/allbooks`)
       .then((res) => res.json())
       .then((data) => {
         setBooks(data);
@@ -11,7 +11,7 @@ const ManageProduct = () => {
   }, []);
   const handleDeleteBook = (id) => {
     if (window.confirm("Are You Sure ? You Want To Delete This Book")) {
-      fetch(`http://localhost:5000/allbooks/${id}`, {
+      fetch(`https://fresh-book-shop-server.vercel.app/allbooks/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

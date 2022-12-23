@@ -7,7 +7,7 @@ const Order = () => {
   const [user] = useAuthState(auth);
   useEffect(() => {
     const email = user.email ;
-    fetch(`http://localhost:5000/order?email=${email}`)
+    fetch(`https://fresh-book-shop-server.vercel.app/order?email=${email}`)
       .then((res) => res.json())
       .then((data) => {
         setOrders(data);

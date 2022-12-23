@@ -7,7 +7,7 @@ const AddBook = () => {
   const { register, handleSubmit ,reset} = useForm();
   const onSubmit = (data) => {
     
-    fetch("http://localhost:5000/addbook", {
+    fetch("https://fresh-book-shop-server.vercel.app/addbook", {
         method : "POST",
         headers : {
             "Content-Type" : "application/json"

@@ -14,7 +14,7 @@ const OrderInfo = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    // axios.post("http://localhost:5000/order", data)
+    // axios.post("https://fresh-book-shop-server.vercel.app/order", data)
     // .then((response) => {
     //   console.log(response);
     //   if (response.insertedId) {
@@ -22,7 +22,7 @@ const OrderInfo = () => {
     //     toast("Your Order Palce Successfully");
     //   }
     // });
-    fetch(`http://localhost:5000/order`, {
+    fetch(`https://fresh-book-shop-server.vercel.app/order`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const OrderInfo = () => {
       });
   };
   useEffect(() => {
-    fetch(`http://localhost:5000/allbooks/${id}`)
+    fetch(`https://fresh-book-shop-server.vercel.app/allbooks/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setBook(data);

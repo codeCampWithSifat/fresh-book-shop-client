@@ -4,7 +4,7 @@ const SingleMangeProduct = ({ book }) => {
     
   const { title, quantity, price, _id } = book;
   const handleDeleteProduct = (id) => {
-    fetch(`http://localhost:5000/allbooks/${id}`, {
+    fetch(`https://fresh-book-shop-server.vercel.app/allbooks/${id}`, {
         method : "DELETE"
     })
     .then(res => res.json())

@@ -62,7 +62,7 @@ import Book from "../Book/Book";
 const Books = () => {
   const [books, setBooks] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allbooks")
+    fetch("https://fresh-book-shop-server.vercel.app/allbooks")
       .then((res) => res.json())
       .then((data) => {
         setBooks(data);
