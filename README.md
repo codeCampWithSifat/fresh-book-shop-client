@@ -5,5 +5,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 <ul>
- <li>some part done</li>
+ <h2>some part done</h2>
 </ul>
