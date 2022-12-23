@@ -13,9 +13,7 @@ const AddProduct = () => {
               <Link to="/manageproducts">Manage Products</Link>
             </li>
             <li className="list-group-item"><Link to="/addproduct">Add Product</Link></li>
-            <li className="list-group-item">A third item</li>
-            <li className="list-group-item">A fourth item</li>
-            <li className="list-group-item">And a fifth one</li>
+           
           </ul>
         </div>
         <div className="col-8">

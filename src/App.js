@@ -10,6 +10,7 @@ import Navbar from "./Components/Shared/Navbar/Navbar";
 import RequiredAuth from "./Components/Login/RequiredAuth/RequiredAuth";
 import ManageProduct from "./Components/ManageProduct/ManageProduct";
 import OrderInfo from "./Components/OrderInfo/OrderInfo";
+import Admin from "./Components/Admin/Admin";
 
 function App() {
   return (
@@ -21,6 +22,14 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/manageproducts" element={<ManageProduct />} />
+        <Route
+          path="/admin"
+          element={
+            <RequiredAuth>
+              <Admin />
+            </RequiredAuth>
+          }
+        />
         <Route
           path="/addproduct"
           element={

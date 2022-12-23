@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg ">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            Navbar
+            Book Shop
           </Link>
           <button
             className="navbar-toggler"
@@ -52,9 +52,9 @@ const Navbar = () => {
                 <Link
                   className="nav-link active"
                   aria-current="page"
-                  to="/addproduct"
+                  to="/admin"
                 >
-                  Add Product
+                  Admin
                 </Link>
               </li>
               {!user ? (
