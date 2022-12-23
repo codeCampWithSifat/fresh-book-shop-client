@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Some Modern Technologies Are Used In This Project . Technologies Are Given Below
 
+<h4>Frontend Technologies Are : <h4>
+
 <ul>
- <h3>some part done</h3>
+ <h4>React In UI</h4>
+ <h4>React Router Latest Version</h4>
+ <h4>Firebase Authentication System</h4>
 </ul>
